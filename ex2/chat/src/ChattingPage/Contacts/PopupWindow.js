@@ -10,6 +10,7 @@ function Popup(props) {
 
         e.preventDefault();
         let flag = 1;
+        //alert('http://' + server + '/api/invitations?from=' + props.activeUser + '&to=' + userName + '&server=localhost:5001')
         fetch('http://' + server + '/api/invitations?from=' + props.activeUser + '&to=' + userName + '&server=localhost:5001',
             {
                 method: 'POST',

@@ -25,7 +25,6 @@ function Input(props) {
                     alert("Can not send message.");
                 }
             });
-
         fetch('http://' + props.server + '/api/transfer?from=' + props.activeUser + '&to=' + props.user + '&content=' + message,
             {
                 method: 'POST',
