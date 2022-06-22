@@ -22,7 +22,7 @@ function Input(props) {
                 if (res.status == "201") {
                     document.getElementById("message").value = "";
                 } else {
-                    alert("Can not send message.");
+                    //alert("Can not send message.");
                 }
             });
         fetch('http://' + props.server + '/api/transfer?from=' + props.activeUser + '&to=' + props.user + '&content=' + message,
@@ -36,7 +36,7 @@ function Input(props) {
                 })
             }).then(res => {
                 if (res.status != "201") {
-                    alert("Can not send message to other contact.");
+                    //alert("Can not send message to other contact.");
                 }
             });
     };

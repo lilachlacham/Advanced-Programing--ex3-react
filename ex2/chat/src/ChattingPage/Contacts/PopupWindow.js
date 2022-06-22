@@ -23,7 +23,7 @@ function Popup(props) {
             }).then(res => {
                 if (res.status != "201") {
                     flag = 0;
-                    alert("Problem with the other server");
+                    //alert("Problem with the other server");
                 }
 
             });
@@ -44,7 +44,7 @@ function Popup(props) {
                         //props.addContact();
                         props.setTrigger(false);
                     } else {
-                        alert("Can not add this contact");
+                        //alert("Can not add this contact");
                         document.getElementById('userName').value = "";
                         document.getElementById('nickName').value = "";
                         document.getElementById('server').value = "";
